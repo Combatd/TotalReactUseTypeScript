@@ -1,12 +1,15 @@
 import * as React from 'react';
 
-function FruitLoops() {
-    let fruit: Array<string> = ["red", "green", "blue", "yellow"];
+type FruitLoopsProps = {
+    fruit: Array<string>
+}
+
+function FruitLoops(props: FruitLoopsProps) {
 
     return (
         <React.Fragment>
             <ul>
-                { fruit.map( (value, index) => {
+                { props.fruit.map( (value, index) => {
                     return <li key={index} style={ { color: value } } > {value}  </li>
                 }) }
             </ul>
