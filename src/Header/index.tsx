@@ -5,8 +5,12 @@ type HeaderProps = {
 }
 
 function Header(props : HeaderProps) {
+    React.useEffect( () => {
+        alert(document.querySelector('#myHeader'));
+    });
+    
     return (
-        <h1 className="primary-header" >{props.text}</h1>
+        <h1 id="myHeader" className="primary-header" >{props.text}</h1>
     )
 }
 
