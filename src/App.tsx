@@ -4,7 +4,7 @@ import Header from './Header';
 
 ReactDOM.render(
     <div>
-        <Header />
+        <Header text="This is the props.text"/>
         <p>this is a paragraph!!</p>
         <a href="#">Click me</a>
     </div>,

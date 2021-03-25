@@ -1,8 +1,8 @@
 import * as React from 'react';
 
-function Header() {
+function Header(props) {
     return (
-        <h1>Hello World!</h1>
+        <h1>{props.text}</h1>
     )
 }
 
