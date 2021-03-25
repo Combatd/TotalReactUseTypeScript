@@ -1,11 +1,16 @@
 import * as React from 'react';
 
 function CustomDate() {
-    let date: string = new Date().toDateString();
+    let date: string = "";
+
+    let getDate = () => {
+        date = new Date().toDateString();
+    }
+
     return (
         <div>
             {date}
-            <button>Get the Date</button>
+            <button onClick={ getDate }>Get the Date</button>
         </div>
     )
 }
