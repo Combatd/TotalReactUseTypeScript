@@ -1,10 +1,10 @@
 import * as React from 'react';
 
 function CustomDate() {
-    let date: string = "";
+    let [date, setDate] = React.useState(""); 
 
     let getDate = () => {
-        date = new Date().toDateString();
+        setDate(new Date().toDateString());
     }
 
     return (
