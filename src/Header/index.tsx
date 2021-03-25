@@ -1,6 +1,10 @@
 import * as React from 'react';
 
-function Header(props) {
+type HeaderProps = {
+    text: string
+}
+
+function Header(props : HeaderProps) {
     return (
         <h1 className="primary-header" >{props.text}</h1>
     )
