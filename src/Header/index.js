@@ -1,7 +1,7 @@
 "use strict";
-exports.__esModule = true;
-var jsx_runtime_1 = require("react/jsx-runtime");
+Object.defineProperty(exports, "__esModule", { value: true });
+var React = require("react");
 function Header(props) {
-    return (jsx_runtime_1.jsx("h1", { children: props.text }, void 0));
+    return (React.createElement("h1", null, props.text));
 }
-exports["default"] = Header;
+exports.default = Header;
